@@ -12,10 +12,7 @@ background-attachment: fixed;
 background-repeat: no-repeat;
 }
 
-.at {
-	width:250px;
-	height:400px;
-}
+
 
 h1 {
 font-family: 'Monofett', cursive;
@@ -191,8 +188,4 @@ body{
 		margin-left:85px;
 	}
 	
-	.atour {
-		width:380px;
-		height:300px;
-	}
 	}
