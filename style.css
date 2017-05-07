@@ -159,7 +159,7 @@ body{
 	
 	@media only screen  and (max-width: 500px) {
     body {
-        
+        width:100%;
 		overflow-x:hidden;
     }
 	
@@ -171,15 +171,16 @@ body{
 		font-size:30px;
 	}
 	
-	#dropd {
+	.dropd {
 		position:relative;
 		margin:62px 8px 100px 19px;
 	}
 		
 	#dropdown {
-		margin-left:  14px;
+		margin-left:  15px;
 	}
-	.container {
-		width:100%;
+
+	.btn {
+		margin-left:85px;
 	}
 	}
