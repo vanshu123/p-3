@@ -162,6 +162,7 @@ body{
     body {
         background-color: lightblue;
 		width:100%;
+		overflow-x:hidden;
     }
 	h2 {
 		font-size:18px;
