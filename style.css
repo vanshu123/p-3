@@ -34,7 +34,7 @@ border:4px solid grey;
 
 select {
 background-color: black;
-color: white; 
+color: white;
 padding:8px;
 width:300px;
 height: 43px;
@@ -65,17 +65,17 @@ text-align:center;
  width:150px;
  text-shadow: 1px solid white;
  }
- 
+
  .btn:hover {
  background-color: white;
  color: black;
  }
- 
+
  .cont {
 	 width: 400px;
 	 height: 300px;
  }
- 
+
  #img1 {
 	 height:240px;
 	 width:300px;
@@ -83,7 +83,7 @@ text-align:center;
  .name {
     position: absolute;
     top: 68%;
-    
+
 	margin-left: 0;
 	margin-right: 0;
 	background-color: rgba(0,0,0,0.8);
@@ -93,13 +93,66 @@ text-align:center;
     width:300px;
 
 }
- 
+
  .cuisine {
 	 background-color: green;
  }
- 
+
 #dropdown {
 	margin-left:200px;
 }
 
- 
+header {
+	background-color: rgba(255,255,255,0.5);
+}
+
+.multi-item-carousel{
+  .carousel-inner{
+    > .item{
+      transition: 600ms ease-in-out left;
+    }
+    .active{
+      &.left{
+        left:-33%;
+      }
+      &.right{
+        left:33%;
+      }
+    }
+    .next{
+      left: 33%;
+    }
+    .prev{
+      left: -33%;
+    }
+    @media all and (transform-3d), (-webkit-transform-3d) {
+      > .item{
+        // use your favourite prefixer here
+        transition: 500ms ease-in-out left;
+        transition: 500ms ease-in-out all;
+        backface-visibility: visible;
+        transform: none!important;
+      }
+    }
+  }
+  .carouse-control{
+    &.left, &.right{
+      background-image: none;
+    }
+  }
+}
+
+// non-related styling:
+body{
+  background: #333;
+  color: #ddd;
+}
+
+ div.navbar-header li.loclink {
+	font-size: 30px;
+  color: white;
+	}
+	ul {
+		width:100%;
+    color: white;
+	}
