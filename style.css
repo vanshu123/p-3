@@ -125,7 +125,7 @@ header {
     .prev{
       left: -33%;
     }
-    @media all and (transform-2d), (-webkit-transform-2d) {
+    @media all and (transform-3d), (-webkit-transform-3d) {
       > .item{
         // use your favourite prefixer here
         transition: 500ms ease-in-out left;
@@ -159,7 +159,7 @@ body{
 	
 	@media only screen  and (max-width: 500px) {
     body {
-        background-color: lightblue;
+        
 		overflow-x:hidden;
     }
 	
@@ -173,9 +173,13 @@ body{
 	
 	#dropd {
 		position:relative;
-		margin:101px 17px 100px 15px;
+		margin:62px 8px 100px 19px;
 	}
 		
 	#dropdown {
 		margin-left:  14px;
+	}
+	.container {
+		width:100%;
+	}
 	}
