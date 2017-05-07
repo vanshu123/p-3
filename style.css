@@ -12,6 +12,11 @@ background-attachment: fixed;
 background-repeat: no-repeat;
 }
 
+.at {
+	height:250px;
+	width:400px;
+}
+
 h1 {
 font-family: 'Monofett', cursive;
 font-size:100px;
@@ -169,7 +174,7 @@ body{
 	}
 	
 	h1 {
-		font-size:35px;
+		font-size:45px;
 	}
 	
 	.dropd {
@@ -183,5 +188,9 @@ body{
 
 	.btn {
 		margin-left:85px;
+	}
+	
+	.at {
+		width:300px;
 	}
 	}
