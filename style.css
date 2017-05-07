@@ -158,7 +158,7 @@ body{
     color: white;
 	}
 	
-	@media only screen and (max-width: 800px) {
+	@media only screen and (max-width: 1000px) {
     body {
         background-color: lightblue;
 		width:100%;
@@ -171,9 +171,9 @@ body{
 	}
 	
 	#dropd {
-		
-		margin:47px -4px 161px -7px;
+		margin:67px 58px 100px 0px
 	}
+		
 	#dropdown {
-		margin-left:  37px;
+		margin-left:  2px;
 	}
