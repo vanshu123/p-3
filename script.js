@@ -73,12 +73,28 @@ $("#dropdown").change(function(){
 			console.log(response);
 			var data=response["data"];
 			data.forEach(function(product,index){
+			var elemen="<div class='fooditems col-md-4 col-md-offset-2'></div>";
+			var imag=$("<img id='ima'>").attr("src",product["image"]);
+			var price=$("<div class='foodp'></div>").text(product["price"]);
+			var foodname=$("<div class='foodn'></div>").text(product["item_name"]);
+			var veg=$("<span class='vegetarianicon'>⊡</span>");
+			var nv="<img src='img/nv.jpg' class='nonv'>";
+			//var non=$("<div class='abcd'></div>").text(product["is_vegetarian"]);
+		    var non= JSON.parse(product["is_vegetarian"]);
+			if (non==true) {
+			foodname=$(foodname).append(veg);
+			}
+			else {
+			foodname=$(foodname).append(nv);
+			}
+			
+			elemen=$(elemen).append(imag,price,foodname);
+			$(".area").append(elemen);
 			
 			});
 		}
 
 	});
-
 
 
 // Instantiate the Bootstrap carousel
