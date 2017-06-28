@@ -302,6 +302,10 @@ padding: 10px;
 	
 	
 }
+ul {
+	display:inline;
+}
+
 
 
 	@media only screen  and (max-width: 500px) {
@@ -346,6 +350,28 @@ padding: 10px;
 	.proid {
 		display:none;
 	}
+	.locid {
+		text-align:center;
+	}
 	
+	.site{
+		text-align:center;
+	}
+	
+	.cuisine{
+		height:2700px;
+		width:400px;
+		
+	}	
+	#img1 {
+		margin-left:30px;
+	}
+	
+	.name {
+		margin-left:30px;
+	}
+	.cont{
+		margin-top:0;
+	}
 	
 	}
